@@ -1,5 +1,9 @@
 package: git.openstack.org/openstack/openstack-cloud-controller-manager
 import:
+- package: github.com/kubernetes-incubator/external-storage
+  subpackages:
+  - lib/controller
+  repo: https://github.com/dims/external-storage
 - package: github.com/golang/glog
 - package: github.com/gophercloud/gophercloud
   subpackages:
@@ -33,9 +37,11 @@ import:
 - package: github.com/spf13/pflag
 - package: gopkg.in/gcfg.v1
 - package: k8s.io/api
+  version: kubernetes-1.9.2
   subpackages:
   - core/v1
 - package: k8s.io/apimachinery
+  version: kubernetes-1.9.2
   subpackages:
   - pkg/api/resource
   - pkg/apis/meta/v1
@@ -44,16 +50,19 @@ import:
   - pkg/util/sets
   - pkg/util/wait
 - package: k8s.io/apiserver
+  version: kubernetes-1.9.2
   subpackages:
   - pkg/server/healthz
   - pkg/util/flag
   - pkg/util/logs
 - package: k8s.io/client-go
+  version: kubernetes-1.9.2
   subpackages:
   - kubernetes
   - rest
   - util/cert
 - package: k8s.io/kubernetes
+  version: v1.9.2
   subpackages:
   - cmd/cloud-controller-manager/app
   - cmd/cloud-controller-manager/app/options

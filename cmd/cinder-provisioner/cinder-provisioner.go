@@ -21,7 +21,7 @@ import (
 
 	"github.com/golang/glog"
 	"github.com/kubernetes-incubator/external-storage/lib/controller"
-	"github.com/kubernetes-incubator/external-storage/openstack/standalone-cinder/pkg/provisioner"
+	"git.openstack.org/openstack/openstack-cloud-controller-manager/pkg/volume/cinder/provisioner"
 
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/client-go/kubernetes"

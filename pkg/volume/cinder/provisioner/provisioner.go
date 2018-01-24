@@ -23,7 +23,7 @@ import (
 	"github.com/golang/glog"
 	"github.com/gophercloud/gophercloud"
 	"github.com/kubernetes-incubator/external-storage/lib/controller"
-	"github.com/kubernetes-incubator/external-storage/openstack/standalone-cinder/pkg/volumeservice"
+	"git.openstack.org/openstack/openstack-cloud-controller-manager/pkg/volume/cinder/volumeservice"
 	"k8s.io/api/core/v1"
 	"k8s.io/client-go/kubernetes"
 )

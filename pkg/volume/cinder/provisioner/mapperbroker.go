@@ -18,7 +18,7 @@ package provisioner
 
 import (
 	"github.com/kubernetes-incubator/external-storage/lib/controller"
-	"github.com/kubernetes-incubator/external-storage/openstack/standalone-cinder/pkg/volumeservice"
+	"git.openstack.org/openstack/openstack-cloud-controller-manager/pkg/volume/cinder/volumeservice"
 	"k8s.io/api/core/v1"
 )
 
